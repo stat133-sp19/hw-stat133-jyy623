@@ -138,6 +138,9 @@ Reference
 ---------
 
 <https://on.nba.com/2Vv1t2u>
+
 <https://bit.ly/2HcDJMD>
+
 <https://bit.ly/2BWTmoc>
+
 <https://bit.ly/2EnDkUD>
