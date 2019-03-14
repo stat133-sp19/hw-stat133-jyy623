@@ -1,4 +1,4 @@
-Workout 1 Golden Gate Warriors Shooting Charts and Percentages Analysis
+Workout 1: Golden Gate Warriors Shooting Charts and Percentages Analysis
 
 Description:  
 
