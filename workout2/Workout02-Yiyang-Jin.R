@@ -97,9 +97,14 @@ ui <- fluidPage(
       ),
       
       # Show a plot of the generated distribution
+<<<<<<< HEAD
       mainPanel(column(4,h4("Timelines")),
          plotOutput("distPlot"),
          column(4,h4("Balance")),
+=======
+      mainPanel(
+         plotOutput("distPlot"),
+>>>>>>> 945b71af48775ce187f74a366a67177e69f19903
          dataTableOutput("distdatatable")
       )
    )
@@ -141,14 +146,22 @@ server <- function(input, output) {
        geom_point(data = dat1[1:(input$years+1),], aes(x = years, y = values, color = "no_contrib")) +
        geom_line(data = dat1[1:(input$years+1),], aes(x = years, y = values, color = "no_contrib")) + 
        facet_grid(~modality) + 
+<<<<<<< HEAD
        labs(color = "variable", fill = "variable") + ggtitle("Three modes of investing")
+=======
+       labs(color = "variable", fill = "variable")
+>>>>>>> 945b71af48775ce187f74a366a67177e69f19903
        } else{
       # draw the histogram with the specified number of bins
     ggplot(data = dat) +
       geom_line(aes(x = years, y = no_contrib, color = "no_contrib")) + 
       geom_line(aes(x = years, y = fixed_contrib, color = "fixed contrib")) + 
+<<<<<<< HEAD
       geom_line(aes(x = years, y = growing_contrib, color = "growing_contrib")) + 
       ggtitle("Three modes of investing")
+=======
+      geom_line(aes(x = years, y = growing_contrib, color = "growing_contrib"))
+>>>>>>> 945b71af48775ce187f74a366a67177e69f19903
        }})
    output$distdatatable = renderDataTable({
        # generate bins based on input$bins from ui.R
