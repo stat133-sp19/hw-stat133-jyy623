@@ -217,19 +217,22 @@ print.binvar = function(x, ...) {
 
 #' @export
 summary.binvar = function(x, ...){
-  list(trials = x$trials,
+
+  list1 = list(trials = x$trials,
        prob = x$prob,
        mean = aux_mean(x$trials, x$prob),
        variance = aux_variance(x$trials, x$prob),
        mode = aux_mode(x$trials, x$prob),
        skewness = aux_skewness(x$trials, x$prob),
        kurtosis = aux_kurtosis(x$trials, x$prob))
+  class(list1) = "summary.binvar"
+  return(list1)
 }
 
 #' @export
 print.summary.binvar = function(x, ...){
   cat('"Summary Binomial"\n\n')
-  cat("Parameters")
+  cat("Parameters\n")
   cat("- number of trials :", x$trials,"\n")
   cat("- prob of success : ", x$prob, "\n\n")
   cat("Measutes\n")
@@ -238,6 +241,7 @@ print.summary.binvar = function(x, ...){
   cat("- mode :", aux_mode(x$trials, x$prob), "\n")
   cat("- skewness :", aux_skewness(x$trials, x$prob), "\n")
   cat("- kurtosis :", aux_kurtosis(x$trials, x$prob), "\n")
+  invisible(x)
 }
 
 #' @title bin_mean
