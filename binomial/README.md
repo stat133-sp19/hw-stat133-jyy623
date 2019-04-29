@@ -1,0 +1,67 @@
+README
+================
+
+Overview
+--------
+
+This package `"binomial"` allows you to do calculations of binomial distributions and make plots of binommial distributions with specific number of trials and probabilites.
+
+Motivation
+----------
+
+The package is developed for easier calculations of different binomial distributions and to plot different graphs for binomial distributions.
+
+Installation
+------------
+
+Install the `binomial` package using the `"devtools` package.
+
+``` r
+# to install development version from Github:
+#install.packages("binomial")
+
+#to install "binomial"
+devtools::install_github("jyy623/binomial", build_vignettes = TRUE)
+```
+
+Usage
+-----
+
+#### Calculating the mean
+
+Use `bin_mean(trials = ,prob = )` to calculate the average of the binomial distribution.
+
+#### Calculating the variance
+
+Use `bin_variance(trials = ,prob = )` to calculate the variance of the binomial distribution.
+
+#### Calculating the mode
+
+Use `bin_mode(trials = ,prob = )` to calculate the mode of the binomial distribution. \#\#\#\# Calculating the skewness
+
+Use `bin_skewness(trials = ,prob = )` to calculate the skewness of the binomial distribution.
+
+#### Calculating the kurtosis
+
+Use `bin_kurtosis(trials = ,prob = )` to calculate the kurtosis of the binomial distribution.
+
+#### Calculating the number of different ways have success among different number of trials
+
+Use`bin_choose(success = , trials = )` to calculate the number of ways to get successes among different number of trials.
+
+#### Calculating the probability of having different number success among different number of trials
+
+Use`bin_probability(success = , trials = , prob = )` to calculate the probability of getting different number of successes among different number of trials with a certain probability of success.
+
+#### Generating dataframe and plot
+
+Use `bin_distribution(trials = , prob = )` to generate a dataframe that contains the corresponding number of probability of have different number of successes. Use `plot.bins()` to plot a graph.
+
+Use `bin_cumulative(trials = , prob = )` to generate a dataframe that contains the cumulative number of probability of have different number of successes. Use `plot.bincum()` to plot a graph.
+
+Use `bin_variable(trials =, prob = )` to generate a list of number of trials and probability of success. Use`print.binvar()` to print the results. Use `summary.binvar` to generate a summary. Use `print.summary.binvar` to print the summary.
+
+Author
+------
+
+Yiyang Jin

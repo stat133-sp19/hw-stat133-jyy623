@@ -1,0 +1,49 @@
+---
+title: "Lab1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+phone <- 80
+phone
+transportaion <- 20
+groceries <- 527
+gym <- 10
+rent <- 1500
+other <- 83
+total <- phone + transportaion + groceries + gym + rent + other
+total
+semester <- 2220 *5
+year <- 2220 * 10
+```
+can name the elements in the vector so that names can be shown
+text(x = plot, y = Expenses_sorted, labels = Expenses, pos = 3, xpd = T)
+```{r}
+expenses <- c(phone, transportaion, groceries, gym, rent, other)
+expenses
+barplot(expenses)
+Expenses <- sort(expenses, decreasing = TRUE)
+
+n <- c("rent", "groceries", "other", "phone", "transport", "gym")
+barplot(Expenses, names.arg = n)
+```
+
+```{r}
+n <- 5
+k <- 2
+p <- 0.5
+n_choose_k <- factorial(5) / factorial(2) /factorial(3)
+n_choose_k
+N_choose_K <- choose(n = 5, k = 2)
+N_choose_K
+help.search("binomial")
+dbinom(2, 5, 0.5)
+dbinom(3, 6, 1/6)
+dbinom(2, 5, 0.35)
+dbinom(3, 5, 0.35) + dbinom(4, 5, 0.35) + dbinom(5, 5, 0.35)
+```
+

@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556382770461.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "46A4991F",
+    "lastKnownWriteTime" : 1556507619,
+    "last_content_update" : 1556507619094,
+    "path" : "~/binomial/R/binomial_functions.R",
+    "project_path" : "R/binomial_functions.R",
+    "properties" : {
+        "cursorPosition" : "84,18",
+        "scrollLine" : "50"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
