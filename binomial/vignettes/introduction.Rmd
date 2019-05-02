@@ -31,6 +31,13 @@ Prob is the probability of getting a success in each trial.
 
 Use `bin_mean(trials = ,prob = )` to calculate the average of the binomial distribution. 
 
+For example:
+```{r}
+library(binomial)
+x = bin_mean(10, 0.5)
+x
+```
+
 ## Calculating the variance
 
 Use `bin_variance(trials = ,prob = )` to calculate the variance of the binomial distribution. 
@@ -57,6 +64,15 @@ Use`bin_probability(success = , trials = , prob = )` to calculate the probabilit
 ## Generating dataframe and plot 
 
 Use `bin_distribution(trials = , prob = )` to generate a dataframe that contains the corresponding number of probability of have different number of successes. Use `plot.bins()` to plot a graph.
+
+For example:
+```{r}
+library(binomial)
+y = bin_distribution(10, 0.5)
+y
+plot(y)
+```
+
 
 Use `bin_cumulative(trials = , prob = )` to generate a dataframe that contains the cumulative number of probability of have different number of successes. Use `plot.bincum()` to plot a graph.
 
